@@ -1,0 +1,84 @@
+.imgMain img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+main {
+    width: 100%;
+    height: auto;
+    background-color: #F7F7F7;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    margin-top: -50px;
+    padding-bottom: 20px;
+}
+
+.titre-menu {
+    position: relative;
+    padding: 35px 20px 0 20px;
+}
+.titre-menu i {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: $main-font;
+    font-size: 27px;
+}
+
+.container-menu {
+    padding: 0 10px;
+}
+
+// Entrée
+
+.container-plat p {
+   font-family: $secondary-font;
+   font-size: 17px;
+   padding-top: 25px;
+}
+.border {
+    border: 2px solid $third-color;
+    width: 11%;
+    margin: 5px 0 15px 0;
+}
+
+// Carte
+
+.carte-menu {
+    width: 91%;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-family: $secondary-font;
+    position: relative;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.carte-menu p {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+
+.carte-menu span {
+    font-weight: bold;
+    color: #353535;
+    position: absolute;
+    top: 36px;
+    left: 310px;
+}
+
+.validation {
+    opacity: 0;
+}
