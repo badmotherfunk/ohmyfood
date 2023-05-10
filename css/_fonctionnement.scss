@@ -1,0 +1,58 @@
+// Section Fonctionnement
+
+.container-fonction {
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.titre {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.carte-fonction {
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    width: auto;
+    height: auto;
+    padding: 23px;
+    display: flex;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.carte-fonction i {
+    color: #7E7E7E;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.carte-fonction span {
+    margin-left: 25px;
+    line-height: 23px;
+    font-size: 14px;
+}
+
+.number {
+    border-radius: 100%;
+    padding: 3px 7px;
+    background-color: $main-color;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    left: -10px;
+}
+
+.container-carte-fonction {
+    padding: 30px 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+}
