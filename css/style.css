@@ -197,12 +197,6 @@ nav {
   position: relative;
 }
 
-.carte-fonction i {
-  color: #7E7E7E;
-  font-size: 17px;
-  margin-left: 5px;
-}
-
 .carte-fonction span {
   margin-left: 25px;
   line-height: 23px;
@@ -224,6 +218,36 @@ nav {
   padding: 30px 0 15px 15px;
   display: flex;
   flex-direction: column;
+}
+
+.icone {
+  color: #7E7E7E;
+  font-size: 17px;
+  margin-left: 5px;
+  animation: flash 10s steps(5, end) infinite;
+}
+
+@keyframes flash {
+  0% {
+    color: #9356DC;
+  }
+  50% {
+    color: #7E7E7E;
+  }
+  100% {
+    color: #9356DC;
+  }
+}
+.icone_1 {
+  animation-delay: 3s;
+}
+
+.icone_2 {
+  animation-delay: 6s;
+}
+
+.icone_3 {
+  animation-delay: 9s;
 }
 
 .container-restaurant {
