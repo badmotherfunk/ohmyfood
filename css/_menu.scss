@@ -59,6 +59,8 @@ h3 {
     padding: 10px 15px;
     font-family: $secondary-font;
     position: relative;
+    overflow: hidden;
+    display: flex;
 }
 
 h4 {
@@ -68,6 +70,9 @@ h4 {
 .carte-menu p {
     margin-top: 5px;
     font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 
@@ -76,9 +81,40 @@ h4 {
     color: #353535;
     position: absolute;
     top: 36px;
-    left: 310px;
+    left: 315px;
 }
 
+
 .validation {
-    opacity: 0;
+    opacity: 1;
+    background-color: $third-color;
+    width: 59px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+    transition: margin-right 0.5s ease-out;
 }
+
+.validation i {
+    color: white;
+    font-size: 22px;
+}
+
+.carte-menu:hover .validation {
+    margin-right: 60px;
+}
+
+.carte-menu:hover .item-price {
+    transform: translateX(-60px);
+    transition: all 0.5s ease-out;
+}
+
+
+
+
+

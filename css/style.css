@@ -302,11 +302,24 @@ a {
   font-size: 16px;
 }
 
-.heart {
+.heart i {
   position: absolute;
   right: 20px;
   top: 190px;
   font-size: 20px;
+}
+
+.heart-full {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.heart-full:hover {
+  opacity: 1;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .new {
@@ -505,6 +518,8 @@ h3 {
   padding: 10px 15px;
   font-family: "Roboto";
   position: relative;
+  overflow: hidden;
+  display: flex;
 }
 
 h4 {
@@ -514,6 +529,9 @@ h4 {
 .carte-menu p {
   margin-top: 5px;
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .carte-menu span {
@@ -521,9 +539,34 @@ h4 {
   color: #353535;
   position: absolute;
   top: 36px;
-  left: 310px;
+  left: 315px;
 }
 
 .validation {
-  opacity: 0;
+  opacity: 1;
+  background-color: #99E2D0;
+  width: 59px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  bottom: 0;
+  right: -60px;
+  transition: margin-right 0.5s ease-out;
+}
+
+.validation i {
+  color: white;
+  font-size: 22px;
+}
+
+.carte-menu:hover .validation {
+  margin-right: 60px;
+}
+
+.carte-menu:hover .item-price {
+  transform: translateX(-60px);
+  transition: all 0.5s ease-out;
 }/*# sourceMappingURL=style.css.map */

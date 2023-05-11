@@ -46,11 +46,24 @@ a {
     font-size: 16px;
 }
 
-.heart {
+
+.heart i {
     position: absolute;
     right: 20px;
     top: 190px;
     font-size: 20px;
+}
+
+.heart-full {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.heart-full:hover {
+    opacity: 1;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);;
 }
 
 .new {
