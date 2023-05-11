@@ -164,6 +164,11 @@ nav {
   font-family: "Roboto";
 }
 
+.btn:hover {
+  background-image: linear-gradient(179deg, rgb(252, 132, 218) -11.44%, rgb(155, 99, 223) 123.93%);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
 .btn a {
   text-decoration: none;
   color: white;
