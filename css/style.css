@@ -330,6 +330,60 @@ a {
   font-weight: 700;
 }
 
+.carte-menu {
+  animation: fondu 1s forwards;
+  opacity: 0;
+}
+
+@keyframes fondu {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.entree {
+  animation-delay: 0.5s;
+}
+
+.plat {
+  animation-delay: 1.5s;
+}
+
+.dessert {
+  animation-delay: 2.5s;
+}
+
+.container-plat {
+  animation: swipe 1s forwards;
+  opacity: 0;
+}
+
+@keyframes swipe {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(1);
+  }
+}
+.start {
+  animation-delay: 0.5s;
+}
+
+.middle {
+  animation-delay: 1.5s;
+}
+
+.end {
+  animation-delay: 2.5s;
+}
+
 footer {
   width: auto;
   height: auto;
