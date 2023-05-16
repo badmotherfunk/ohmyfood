@@ -1,0 +1,585 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  background-color: #fff;
+  opacity: 0.9;
+  animation: disappear 0s 3s forwards;
+  display: grid;
+  place-items: center;
+}
+.loader__text {
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #353535;
+}
+
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+.loader-dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  height: 100px;
+  flex-wrap: wrap;
+}
+.loader-dots .loader-dot {
+  width: 20%;
+  height: 20%;
+  margin: 0;
+  border-radius: 100%;
+  background-color: #9356DC;
+  animation: three 1s infinite ease-in-out both;
+  animation-delay: 0ms;
+}
+.loader-dots .loader-dot__2 {
+  animation-delay: 225ms;
+}
+.loader-dots .loader-dot__3 {
+  animation-delay: 450ms;
+}
+
+@keyframes three {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #EAEAEA;
+  min-width: 320px;
+}
+
+h1 {
+  font-family: "Shrikhand";
+  font-size: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: auto;
+  height: 63px;
+  box-shadow: 0 0 5px 0;
+  position: relative;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 50px;
+}
+
+.location i {
+  color: #353535;
+  padding: 5px;
+  margin-left: 70px;
+}
+
+.location span {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #353535;
+  padding: 5px;
+}
+
+.location input {
+  outline: none;
+  border: none;
+  background-color: #EAEAEA;
+  font-family: "Roboto";
+  color: #353535;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.container-explorer {
+  width: auto;
+  height: auto;
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto";
+  padding: 30px;
+  text-align: center;
+}
+
+.container-explorer h2 {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.container-explorer p {
+  font-weight: 300;
+}
+
+.explorer-btn {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #9356DC;
+  border-radius: 25px;
+  padding: 13px;
+  background-image: linear-gradient(179deg, rgb(255, 121, 218) -11.44%, rgb(147, 86, 220) 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-size: 16px;
+  width: 180px;
+  height: 25px;
+  line-height: 25px;
+  font-family: "Roboto";
+}
+
+.btn:hover {
+  background-image: linear-gradient(179deg, rgb(252, 132, 218) -11.44%, rgb(155, 99, 223) 123.93%);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-fonction {
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding: 40px 20px;
+  margin-top: 45px;
+}
+
+.titre {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.carte-fonction {
+  background-color: #F3F3F3;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  width: auto;
+  height: auto;
+  padding: 23px;
+  display: flex;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 15px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.carte-fonction span {
+  margin-left: 25px;
+  line-height: 23px;
+  font-size: 14px;
+}
+
+.number {
+  border-radius: 100%;
+  padding: 3px 7px;
+  background-color: #9356DC;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: -10px;
+}
+
+.container-carte-fonction {
+  padding: 30px 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icone {
+  color: #7E7E7E;
+  font-size: 17px;
+  margin-left: 5px;
+  animation: flash 10s steps(5, end) infinite;
+}
+
+@keyframes flash {
+  0% {
+    color: #9356DC;
+  }
+  50% {
+    color: #7E7E7E;
+  }
+  100% {
+    color: #9356DC;
+  }
+}
+.icone_1 {
+  animation-delay: 3s;
+}
+
+.icone_2 {
+  animation-delay: 6s;
+}
+
+.icone_3 {
+  animation-delay: 9s;
+}
+
+.container-restaurant {
+  background-color: #F3F3F3;
+  width: auto;
+  height: auto;
+  padding: 50px 15px;
+}
+
+.container-carte-restaurant {
+  padding: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.carte {
+  width: 100%;
+  height: 240px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.carte-restaurant img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 170px;
+  border-radius: 15px 15px 0 0;
+}
+
+.carte-restaurant h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 10px 5px 10px;
+}
+
+.carte-restaurant p {
+  font-family: "Roboto";
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.heart i {
+  position: absolute;
+  right: 20px;
+  top: 190px;
+  font-size: 20px;
+}
+
+.heart-full {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.heart-full:hover {
+  opacity: 1;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
+.new {
+  width: 75px;
+  height: 23px;
+  background-color: #99E2D0;
+  font-family: "Roboto";
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding: 2px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.new p {
+  color: #008766;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.carte-menu {
+  animation: fondu 1s forwards;
+  opacity: 0;
+}
+
+@keyframes fondu {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.entree {
+  animation-delay: 0.5s;
+}
+
+.plat {
+  animation-delay: 1.5s;
+}
+
+.dessert {
+  animation-delay: 2.5s;
+}
+
+.container-plat {
+  animation: swipe 1s forwards;
+  opacity: 0;
+}
+
+@keyframes swipe {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(1);
+  }
+}
+.start {
+  animation-delay: 0.5s;
+}
+
+.middle {
+  animation-delay: 1.5s;
+}
+
+.end {
+  animation-delay: 2.5s;
+}
+
+footer {
+  width: auto;
+  height: auto;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.titre-footer {
+  color: white;
+  font-family: "Shrikhand";
+  margin-bottom: 20px;
+}
+
+.soumettre i {
+  color: white;
+  font-size: 12px;
+}
+
+.soumettre a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 8px;
+}
+
+.partenaire i {
+  color: white;
+  font-size: 10px;
+}
+
+.partenaire a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 6px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.soumettre {
+  margin-bottom: 5px;
+}
+
+.partenaire {
+  margin-bottom: 5px;
+}
+
+.imgMain img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: #F7F7F7;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  margin-top: -50px;
+  padding-bottom: 20px;
+}
+
+.titre-menu {
+  position: relative;
+  padding: 35px 20px 0 20px;
+}
+
+.titre-menu i {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: "Shrikhand";
+  font-size: 27px;
+}
+
+.container-menu {
+  padding: 0 10px;
+}
+
+.container-plat p {
+  font-family: "Roboto";
+  font-size: 17px;
+  padding-top: 25px;
+}
+
+.border {
+  border: 2px solid #99E2D0;
+  width: 11%;
+  margin: 5px 0 15px 0;
+}
+
+.carte-menu {
+  width: 91%;
+  height: 50px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-family: "Roboto";
+  position: relative;
+  overflow: hidden;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.card-txt p {
+  margin-top: 5px;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card-txt h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.carte-menu span {
+  font-weight: bold;
+  color: #353535;
+  position: absolute;
+  top: 36px;
+  right: 10px;
+}
+
+.validation {
+  opacity: 1;
+  background-color: #99E2D0;
+  width: 59px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  bottom: 0;
+  right: -60px;
+  transition: margin-right 0.5s ease-out;
+}
+
+.validation i {
+  color: white;
+  font-size: 22px;
+}
+
+.carte-menu:hover .validation {
+  margin-right: 60px;
+}
+
+.item-price {
+  transition: all 0.5s ease-out;
+}
+
+.carte-menu:hover .item-price {
+  transform: translateX(-60px);
+}
+
+.card-txt:hover {
+  width: 220px;
+}/*# sourceMappingURL=style.css.map */
