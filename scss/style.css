@@ -257,6 +257,11 @@ nav {
 .container-restaurant__carte {
   padding: 20px 0;
 }
+.container-restaurant__titre {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+}
 
 a {
   text-decoration: none;

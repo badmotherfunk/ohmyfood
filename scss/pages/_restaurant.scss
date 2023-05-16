@@ -9,6 +9,12 @@
     &__carte {
         padding: 20px 0;
     }
+
+    &__titre {
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 24px;
+    }
 }
 
 a {
