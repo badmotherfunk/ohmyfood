@@ -6,12 +6,12 @@
     background-color: white;
     padding: 40px 20px;
     margin-top: 45px;
-}
 
-.titre {
-    font-family: $secondary-font;
-    font-weight: 700;
-    font-size: 24px;
+    &__titre {
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 24px;
+    }
 }
 
 .carte_fonction {
@@ -27,13 +27,14 @@
     font-size: 15px;
     margin: 10px 0;
     position: relative;
+
+    &__text {
+        margin-left: 25px;
+        line-height: 23px;
+        font-size: 14px;
+    }
 }
 
-.carte_fonction span {
-    margin-left: 25px;
-    line-height: 23px;
-    font-size: 14px;
-}
 
 .number {
     border-radius: 100%;
