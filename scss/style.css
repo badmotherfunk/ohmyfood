@@ -188,7 +188,7 @@ nav {
   font-size: 24px;
 }
 
-.carte-fonction {
+.carte_fonction {
   background-color: #F3F3F3;
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -203,7 +203,7 @@ nav {
   position: relative;
 }
 
-.carte-fonction span {
+.carte_fonction span {
   margin-left: 25px;
   line-height: 23px;
   font-size: 14px;
@@ -232,6 +232,15 @@ nav {
   margin-left: 5px;
   animation: flash 10s steps(5, end) infinite;
 }
+.icone__1 {
+  animation-delay: 3s;
+}
+.icone__2 {
+  animation-delay: 6s;
+}
+.icone__3 {
+  animation-delay: 9s;
+}
 
 @keyframes flash {
   0% {
@@ -244,18 +253,6 @@ nav {
     color: #9356DC;
   }
 }
-.icone_1 {
-  animation-delay: 3s;
-}
-
-.icone_2 {
-  animation-delay: 6s;
-}
-
-.icone_3 {
-  animation-delay: 9s;
-}
-
 .container-restaurant {
   background-color: #F3F3F3;
   width: auto;
@@ -344,9 +341,18 @@ a {
   font-weight: 700;
 }
 
-.carte-menu {
+.carte__menu {
   animation: fondu 1s forwards;
   opacity: 0;
+}
+.carte__menu__entree {
+  animation-delay: 0.5s;
+}
+.carte__menu__plat {
+  animation-delay: 1.5s;
+}
+.carte__menu__dessert {
+  animation-delay: 2.5s;
 }
 
 @keyframes fondu {
@@ -359,21 +365,18 @@ a {
     transform: scale(1);
   }
 }
-.entree {
-  animation-delay: 0.5s;
-}
-
-.plat {
-  animation-delay: 1.5s;
-}
-
-.dessert {
-  animation-delay: 2.5s;
-}
-
-.container-plat {
+.container__plat {
   animation: swipe 1s forwards;
   opacity: 0;
+}
+.container__plat__start {
+  animation-delay: 0.5s;
+}
+.container__plat__middle {
+  animation-delay: 1.5s;
+}
+.container__plat__end {
+  animation-delay: 2.5s;
 }
 
 @keyframes swipe {
@@ -386,18 +389,6 @@ a {
     transform: translateX(1);
   }
 }
-.start {
-  animation-delay: 0.5s;
-}
-
-.middle {
-  animation-delay: 1.5s;
-}
-
-.end {
-  animation-delay: 2.5s;
-}
-
 footer {
   width: auto;
   height: auto;
@@ -497,7 +488,7 @@ h3 {
   padding: 0 10px;
 }
 
-.container-plat p {
+.container__plat p {
   font-family: "Roboto";
   font-size: 17px;
   padding-top: 25px;
@@ -509,7 +500,7 @@ h3 {
   margin: 5px 0 15px 0;
 }
 
-.carte-menu {
+.carte__menu {
   width: 91%;
   height: 50px;
   background-color: white;
@@ -529,18 +520,15 @@ h4 {
 .card-txt p {
   margin-top: 5px;
   font-size: 15px;
+}
+
+.card-txt p, h4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.card-txt h4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.carte-menu span {
+.carte__menu span {
   font-weight: bold;
   color: #353535;
   position: absolute;
@@ -568,7 +556,7 @@ h4 {
   font-size: 22px;
 }
 
-.carte-menu:hover .validation {
+.carte__menu:hover .validation {
   margin-right: 60px;
 }
 
@@ -576,7 +564,7 @@ h4 {
   transition: all 0.5s ease-out;
 }
 
-.carte-menu:hover .item-price {
+.carte__menu:hover .item-price {
   transform: translateX(-60px);
 }
 

@@ -14,7 +14,7 @@
     font-size: 24px;
 }
 
-.carte-fonction {
+.carte_fonction {
     background-color: #F3F3F3;
     border-radius: 20px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -29,7 +29,7 @@
     position: relative;
 }
 
-.carte-fonction span {
+.carte_fonction span {
     margin-left: 25px;
     line-height: 23px;
     font-size: 14px;
@@ -57,6 +57,15 @@
     font-size: 17px;
     margin-left: 5px;
     animation: flash 10s steps(5, end) infinite; 
+    &__1 {
+        animation-delay: 3s;
+    }
+    &__2 {
+        animation-delay: 6s;
+    }
+    &__3 {
+        animation-delay: 9s;
+    }
 }
 
 
@@ -72,14 +81,6 @@
     }
 }
 
-.icone_1 {
-    animation-delay: 3s;
-}
-.icone_2 {
-    animation-delay: 6s;
-}
-.icone_3 {
-    animation-delay: 9s;
-}
+
 
 

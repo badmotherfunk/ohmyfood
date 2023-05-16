@@ -1,8 +1,17 @@
-.carte-menu {
+.carte__menu {
     animation: fondu 1s forwards;
     opacity: 0;
+    &__entree {
+        animation-delay: 0.5s;
+    }
+    &__plat {
+        animation-delay: 1.5s;
+    }
+    &__dessert {
+        animation-delay: 2.5s;
+    }
+    
 }
-
 
 @keyframes fondu {
     from {
@@ -15,19 +24,19 @@
     }
 }
 
-.entree {
-    animation-delay: 0.5s;
-}
-.plat {
-    animation-delay: 1.5s;
-}
-.dessert {
-    animation-delay: 2.5s;
-}
 
-.container-plat {
+.container__plat {
     animation: swipe 1s forwards;
     opacity: 0;
+    &__start {
+        animation-delay: 0.5s;
+    }
+    &__middle {
+        animation-delay: 1.5s;
+    }
+    &__end {
+        animation-delay: 2.5s;
+    }
 }
 
 @keyframes swipe {
@@ -41,15 +50,7 @@
     }
 }
 
-.start {
-    animation-delay: 0.5s;
-}
-.middle {
-    animation-delay: 1.5s;
-}
-.end {
-    animation-delay: 2.5s;
-}
+
 
 
 

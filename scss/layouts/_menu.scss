@@ -36,7 +36,7 @@ h3 {
 
 // Entrée
 
-.container-plat p {
+.container__plat p {
    font-family: $secondary-font;
    font-size: 17px;
    padding-top: 25px;
@@ -49,7 +49,7 @@ h3 {
 
 // Carte
 
-.carte-menu {
+.carte__menu {
     width: 91%;
     height: 50px;
     background-color: white;
@@ -69,19 +69,16 @@ h4 {
 .card-txt p {
     margin-top: 5px;
     font-size: 15px;
+}
+
+.card-txt p, h4 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.card-txt h4 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
 
-
-.carte-menu span {
+.carte__menu span {
     font-weight: bold;
     color: #353535;
     position: absolute;
@@ -110,7 +107,7 @@ h4 {
     font-size: 22px;
 }
 
-.carte-menu:hover .validation {
+.carte__menu:hover .validation {
     margin-right: 60px;
 }
 
@@ -118,7 +115,7 @@ h4 {
     transition: all 0.5s ease-out;
 }
 
-.carte-menu:hover .item-price {
+.carte__menu:hover .item-price {
     transform: translateX(-60px);
 }
 
