@@ -1,5 +1,5 @@
-@import './pages/loader';
 @import './utils/variables';
+@import './pages/loader';
 @import './base/reset';
 @import './layouts/header';
 @import './pages/exploration';
@@ -12,6 +12,10 @@
 
 @import './layouts/menu';
 
+
+// Mediaqueries
+
+@import './base/mediaqueries'
 
 
 

@@ -4,7 +4,7 @@
     height: auto;
     position: relative;
 }
-main {
+.main-container {
     width: 100%;
     height: auto;
     background-color: #F7F7F7;
@@ -21,7 +21,7 @@ main {
 .titre-menu i {
     position: absolute;
     top: 40px;
-    right: 40px;
+    right: 1.5vh;
     font-size: 25px;
 }
 
@@ -75,6 +75,7 @@ h4 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    width: calc(100% - 80px);
 }
 
 
@@ -119,8 +120,14 @@ h4 {
     transform: translateX(-60px);
 }
 
-.card-txt:hover {
-    width: 220px;
+
+.carte__menu:hover {
+    text-overflow: ellipsis;
+    width: calc(100% - 110px);
+}
+
+.carte__menu:hover .card-txt {
+    margin-right: 30px;
 }
 
 

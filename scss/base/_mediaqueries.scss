@@ -1,0 +1,185 @@
+@media screen and (min-width: $tablet) {
+
+    .imgMain img{
+        height: 350px;
+        
+    }
+
+    //Fonctionnement 
+
+    .container-carte-fonction {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 30px;   
+     }
+
+    .carte_fonction {
+        width: 100%;
+        flex-shrink: 1;
+        &__text {
+            flex-shrink: 0;
+            margin-left: 13px;
+        }
+    }
+
+    .container-explorer__titre {
+        font-size: 30px;
+    }
+
+    // Restaurant 
+
+    .container-restaurant {
+        padding: 20px 20px 0 20px;
+    }
+
+    .container-restaurant__carte {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .carte {
+        width: 45%;
+        margin: 0;
+    }
+
+    .carte:nth-child(1) {
+        margin-bottom: 50px;
+    }
+    .carte:nth-child(2) {
+        margin-bottom: 50px;
+    }
+
+
+    // Footer 
+
+    footer {
+        padding: 20px 40px 0 0;
+    }
+
+    .titre-footer {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        padding: 20px 25px 15px 25px;
+    }
+
+    .text-footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-footer-proposition {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        margin-right: 30px;
+    }
+
+    .text-footer-contact {
+        display: flex;
+        gap: 16px;
+        margin-right: 50px;
+        flex-direction: row; 
+    }
+
+
+    // Pages 
+
+    .titre-menu {
+        text-align: center;
+        padding: 50px 0 0 0;
+    }
+
+    .titre-menu i {
+        top: 4.5vh;
+        left: 30vh;
+    }
+
+    .container-menu {
+        padding: 0 200px;
+    }
+    
+
+}
+
+@media screen and (min-width: $desktop) {
+
+    .imgMain {
+        height: 10%;
+    }
+
+    // Fonctionnement 
+
+    .container-fonction {
+        padding: 40px 150px;
+    }
+
+    .container-fonction__global {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-explorer__titre {
+        font-size: 40px;
+    }
+
+    .container-explorer__text {
+        font-size: 18px;
+    }
+
+
+    // Restaurant
+
+    .container-restaurant {
+        padding: 20px 150px 0 150px;
+    }
+
+    .carte_fonction__text {
+        margin-left: 15px;
+    }
+
+    .container-restaurant__global {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+    // Footer 
+
+    footer {
+        padding: 20px 50px 0 0;
+    }
+
+    .text-footer-proposition {
+        margin-right: 50px;
+    }
+
+    .text-footer-contact {
+        margin-right: 100px;
+    }
+
+
+    // Page 
+
+    .main-container {
+        width: 80%;
+        left: 10%;
+    }
+
+    main {
+        
+    }
+
+} 
