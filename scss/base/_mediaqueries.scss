@@ -1,8 +1,8 @@
 @media screen and (min-width: $tablet) {
 
     .imgMain img{
-        height: 350px;
-        
+        height: 30vw;
+        object-position: 0 65%;
     }
 
     .container-explorer__titre {
@@ -135,8 +135,10 @@
 
 @media screen and (min-width: $desktop) {
 
-    .imgMain {
-        height: 10%;
+
+    .imgMain img{
+        height: 20vw;
+        object-position: 0 60%;
     }
 
     // Fonctionnement 

@@ -449,7 +449,7 @@ footer a {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 80vw;
   position: relative;
 }
 
@@ -576,7 +576,9 @@ h4 {
 
 @media screen and (min-width: 769px) {
   .imgMain img {
-    height: 350px;
+    height: 30vw;
+    -o-object-position: 0 65%;
+       object-position: 0 65%;
   }
   .container-explorer__titre {
     font-size: 30px;
@@ -675,8 +677,10 @@ h4 {
   }
 }
 @media screen and (min-width: 1024px) {
-  .imgMain {
-    height: 10%;
+  .imgMain img {
+    height: 20vw;
+    -o-object-position: 0 60%;
+       object-position: 0 60%;
   }
   .container-fonction {
     padding: 40px 150px;
