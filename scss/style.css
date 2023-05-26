@@ -66,6 +66,8 @@
 body {
   background-color: #FFFFFF;
   min-width: 320px;
+  max-width: 1440px;
+  margin: auto;
 }
 
 nav {
@@ -316,6 +318,18 @@ a {
   opacity: 1;
 }
 
+.heart-full-card {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+.heart-full-card:hover {
+  opacity: 1;
+}
+
 .new {
   width: 90px;
   height: 30px;
@@ -465,13 +479,20 @@ footer a {
 .titre-menu {
   position: relative;
   padding: 35px 20px 0 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.titre-menu i {
-  position: absolute;
-  top: 40px;
-  right: 2vw;
+.heart-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  margin-bottom: 5px;
   font-size: 25px;
+}
+
+.heart-full {
+  transform: translateX(-25px);
 }
 
 h3 {
