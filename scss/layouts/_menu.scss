@@ -22,7 +22,7 @@
 .titre-menu i {
     position: absolute;
     top: 40px;
-    right: 1.5vh;
+    right: 2vw;
     font-size: 25px;
 }
 
@@ -122,14 +122,11 @@ h4 {
 }
 
 
-.carte__menu:hover {
+.carte__menu:hover .card-txt {
     text-overflow: ellipsis;
-    width: calc(100% - 110px);
+    width: calc(100% - 50px);
 }
 
-.carte__menu:hover .card-txt {
-    margin-right: 30px;
-}
 
 
 

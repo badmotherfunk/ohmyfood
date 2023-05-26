@@ -68,7 +68,7 @@ body {
   min-width: 320px;
 }
 
-h1 {
+nav {
   font-family: "Shrikhand";
   font-size: 30px;
 }
@@ -302,19 +302,18 @@ a {
   position: absolute;
   right: 20px;
   top: 190px;
-  font-size: 20px;
 }
 
 .heart-full {
   opacity: 0;
-  transition: all 0.5s ease-out;
-}
-.heart-full:hover {
-  opacity: 1;
+  transition: all 1s ease-in-out;
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+.heart-full:hover {
+  opacity: 1;
 }
 
 .new {
@@ -471,7 +470,7 @@ footer a {
 .titre-menu i {
   position: absolute;
   top: 40px;
-  right: 1.5vh;
+  right: 2vw;
   font-size: 25px;
 }
 
@@ -565,13 +564,9 @@ h4 {
   transform: translateX(-60px);
 }
 
-.carte__menu:hover {
-  text-overflow: ellipsis;
-  width: calc(100% - 110px);
-}
-
 .carte__menu:hover .card-txt {
-  margin-right: 30px;
+  text-overflow: ellipsis;
+  width: calc(100% - 50px);
 }
 
 @media screen and (min-width: 769px) {
