@@ -139,6 +139,7 @@ nav {
 .container-explorer__titre {
   font-size: 25px;
   padding: 10px;
+  font-family: "Roboto";
 }
 .container-explorer__text {
   font-weight: 300;
@@ -495,7 +496,7 @@ footer a {
   transform: translateX(-25px);
 }
 
-h3 {
+h1 {
   font-family: "Shrikhand";
   font-size: 27px;
 }
@@ -529,7 +530,7 @@ h3 {
   overflow: hidden;
 }
 
-h4 {
+h2 {
   font-size: 18px;
 }
 
