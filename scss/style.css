@@ -307,6 +307,10 @@ a {
   top: 190px;
 }
 
+.heart {
+  font-size: 23px;
+}
+
 .heart-full {
   opacity: 0;
   transition: all 1s ease-in-out;
@@ -496,7 +500,7 @@ footer a {
   transform: translateX(-25px);
 }
 
-h1 {
+h3 {
   font-family: "Shrikhand";
   font-size: 27px;
 }
@@ -530,7 +534,7 @@ h1 {
   overflow: hidden;
 }
 
-h2 {
+h4 {
   font-family: "Roboto";
   font-size: 18px;
 }
@@ -540,7 +544,7 @@ h2 {
   font-size: 15px;
 }
 
-.card-txt p, h2 {
+.card-txt p, h4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

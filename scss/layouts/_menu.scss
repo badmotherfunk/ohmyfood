@@ -35,7 +35,7 @@
 }
 
 
-h1 {
+h3 {
     font-family: $main-font;
     font-size: 27px;
 }
@@ -72,7 +72,7 @@ h1 {
     overflow: hidden;
 }
 
-h2 {
+h4 {
     font-family: $secondary-font;
     font-size: 18px;
 }
@@ -82,7 +82,7 @@ h2 {
     font-size: 15px;
 }
 
-.card-txt p, h2 {
+.card-txt p, h4 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
